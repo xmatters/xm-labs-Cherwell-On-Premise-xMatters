@@ -43,7 +43,7 @@ Out of the box, the integration uses a One Step to initiate a webservice call wi
 
 The Integration Agent uses Cherwell REST API to GET Incident and Task properties from Cherwell. This is used to avoid known bugs in cherwell webservice OneStep when fields contains certain special characters. 
 
-After retreiving Cherwell property values, the New Incident One Stop inbound integration is targeted from the Integration Agent.  An Automation Process is used to kick off the Cherwell One Step automatically when specified criteria are met. This can be customized to whatever criteria you see fit for your usecase. This integration was designed for Automation Processes that kickoff for all Tasks related to Priority 1 and 2 Indicents.
+After retreiving Cherwell property values, the New Incident One Step inbound integration is targeted from the Integration Agent.  An Automation Process is used to kick off the Cherwell One Step automatically when specified criteria are met. This can be customized to whatever criteria you see fit for your usecase. This integration was designed for Automation Processes that kickoff for all Tasks related to Priority 1 and 2 Indicents.
 
 Before creating the event, the integration builder script will check the Assigned Group set in Cherwell is not empty. If the Assigned Group is empty, xMatters will target a hard coded group defaulted to Service Desk. This group can be changed as required.
 
